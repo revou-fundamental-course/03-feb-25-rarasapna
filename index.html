@@ -1,20 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website Konversi Suhu</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-
+        <h1>Konversi Suhu</h1>
     </header>
     <main>
+        <!-- introduction -->
+        <section>
+            <p>Masukkan Suhu Derajat Celcius (&deg;C) ke kotak dibawah,
+                lalu klik tombol Konversi untuk mengkonversi ke Fahrenheit (&deg;F)</h1>
+            </p>
+        </section>
 
+        <!-- form input -->
+        <section>
+            <!-- <form action="">
+                <label for="input-celcius">Celcius: </label>
+                <input type="number" name="celcius" id="input-celcius">
+            </form> -->
+
+            <div>
+                <label for="main-input"></label>
+                <input type="number" id="main-input">
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <button>Konversi</button>
+                <button>Reset</button>
+                <button>Reverse</button>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="main-result"></label>
+                <input type="text" id="main-result">
+            </div>
+        </section>
+
+        <!-- cara konversi suhu -->
+        <section>
+            <div>
+                <label for="how-result">Cara Konversi</label>
+                <input type="text" id="how-result">
+            </div>
+        </section>
+
+
+        <!-- penjelasan rumus konversi suhu -->
+        <section>
+            <header>
+                <h2>Cara Konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
+            </header>
+        <hr>
+            <article>
+                <p>Suhu <span>s</span></p>
+                <p>S <sub>(&deg;F)</sub>=</p>
+            </article>
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
