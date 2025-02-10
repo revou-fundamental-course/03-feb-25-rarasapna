@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Konversi Suhu</title>
+    <title>Website Konversi Suhu | iarsapna</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,14 +13,12 @@
         <h1>Konversi Suhu</h1>
     </header>
     <main>
-        <!-- introduction -->
         <section>
             <p>Masukkan Suhu Derajat Celcius (&deg;C) ke kotak dibawah,
                 lalu klik tombol Konversi untuk mengkonversi ke Fahrenheit (&deg;F)</h1>
             </p>
         </section>
-
-        <!-- form input -->
+        
         <section>
             <!-- <form action="">
                 <label for="input-celcius">Celcius: </label>
@@ -28,27 +26,26 @@
             </form> -->
 
             <div>
-                <label for="main-input"></label>
+                <label for="main-input">Celcius (&deg;C)</label>
                 <input type="number" id="main-input">
             </div>
         </section>
 
         <section>
             <div>
-                <button class="btn-konversi">Konversi</button>
-                <button class="btn-reset">Reset</button>
-                <button class="btn-reverse">Reverse</button>
+                <button class="btn-konversi" onclick="ctf()">Konversi</button>
+                <button class="btn-reset" onclick="reset()">Reset</button>
+                <button class="btn-reverse" onclick="ctc()">Reverse</button>
             </div>
         </section>
 
         <section>
             <div>
-                <label for="main-result"></label>
+                <label for="main-result">Fahrenheit (&deg;F)</label>
                 <input type="text" id="main-result">
             </div>
         </section>
 
-        <!-- cara konversi suhu -->
         <section>
             <div>
                 <label for="how-result">Cara Konversi</label>
@@ -56,22 +53,30 @@
             </div>
         </section>
 
-
-        <!-- penjelasan rumus konversi suhu -->
+        <br>
         <section>
             <header>
                 <h2>Cara Konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
             </header>
-        <hr>
+            <hr>
             <article>
-                <p>Suhu <span>s</span></p>
-                <p>S <sub>(&deg;F)</sub>=</p>
+                <!-- <p>Suhu <span>s</span></p>
+                <p>S <sub>(&deg;F)</sub>=</p> -->
+                <p>Suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
+                <div class="rumus-ctof">
+                    <p><b>S <sub>(&deg;F)</b></sub> = <b>(S<sub>(&deg;C)</sub> x 9/5) + 32</b></p>
+                </div>
+                <p class="atau">Atau</p>
+                <div class="rumus-ctof">
+                    <p><b>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 1.8) + 32</b></p>
+                </div>
+               
             </article>
         </section>
     </main>
     <footer>
-
+        <p>&copy; 2025 - iarsapna </p>
     </footer>
 </body>
-
+<script src="js/script.js"></script>
 </html>
