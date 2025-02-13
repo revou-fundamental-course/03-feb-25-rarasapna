@@ -1,7 +1,7 @@
- /* General Styles */
- body {
+/* === General Styles === */
+body {
     font-family: 'Poppins', sans-serif;
-    /* background: linear-gradient(135deg, #f5f5f5, #e8eaf6); */
+    /* Background utama halaman */
     background-color: #1d6948;
     color: #333;
     margin: 0;
@@ -13,13 +13,15 @@
     overflow-y: auto;
 }
 
-.header-icon{
+/* === Header Icon === */
+.header-icon {
     width: 100px;
     height: 100px;
     margin: 0 auto;
     display: block;
 }
 
+/* === Container Utama === */
 .container {
     background: rgb(255, 247, 247);
     border-radius: 15px;
@@ -33,6 +35,7 @@
     position: relative;
 }
 
+/* === Judul Halaman === */
 h1 {
     color: #2c3e50;
     font-size: 28px;
@@ -40,6 +43,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* === Label Input === */
 label {
     font-size: 16px;
     font-weight: 500;
@@ -49,6 +53,7 @@ label {
     text-align: left;
 }
 
+/* === Input Box === */
 input {
     width: 100%;
     padding: 12px;
@@ -66,6 +71,7 @@ input:focus {
     border-color: #5c6bc0;
 }
 
+/* === btn Umum === */
 button {
     border: none;
     color: white;
@@ -79,6 +85,7 @@ button {
     display: block;
 }
 
+/* === btn Konversi === */
 .btn-konversi {
     background: linear-gradient(135deg, #1e88e5, #42a5f5);
     box-shadow: 0 4px 10px rgba(30, 136, 229, 0.3);
@@ -87,6 +94,7 @@ button {
     background: linear-gradient(135deg, #1565c0, #1e88e5);
 }
 
+/* === btn Reset === */
 .btn-reset {
     background: linear-gradient(135deg, #e53935, #ef5350);
     box-shadow: 0 4px 10px rgba(229, 57, 53, 0.3);
@@ -95,6 +103,7 @@ button {
     background: linear-gradient(135deg, #c62828, #d32f2f);
 }
 
+/* === btn Reverse === */
 .btn-reverse {
     background: linear-gradient(135deg, #43a047, #66bb6a);
     box-shadow: 0 4px 10px rgba(67, 160, 71, 0.3);
@@ -103,6 +112,7 @@ button {
     background: linear-gradient(135deg, #2e7d32, #43a047);
 }
 
+/* === btn Lihat Penjelasan === */
 #explanation-btn {
     background: linear-gradient(135deg, #ff9800, #fb8c00);
     color: white;
@@ -117,18 +127,17 @@ button {
     display: inline-block;
     margin-top: 15px;
 }
-
 #explanation-btn:hover {
     background: linear-gradient(135deg, #fb8c00, #ff9800);
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(255, 152, 0, 0.4);
 }
-
 #explanation-btn:active {
     transform: translateY(0);
     box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
 }
 
+/* === Kotak Hasil, Penjelasan, dan Catatan Rumus === */
 .result-box, .explanation-box, .note-box {
     margin-top: 20px;
     padding: 20px;
@@ -138,11 +147,13 @@ button {
     text-align: center;
 }
 
+/* === Kotak Hasil Konversi === */
 .result-box {
     background: #e8f5e9;
     border-color: #43a047;
 }
 
+/* === Kotak Penjelasan Konversi === */
 .explanation-box {
     display: none;
     background: #fff3e0;
@@ -155,6 +166,7 @@ button {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* === Kotak Catatan Rumus === */
 .note-box {
     background: #e3f2fd;
     border-color: #1976d2;
@@ -163,10 +175,12 @@ button {
     text-align: left;
 }
 
-.rumuz{
+/* === Bagian Rumus dalam Catatan === */
+.rumuz {
     text-align: center;
 }
 
+/* === Footer === */
 footer {
     text-align: center;
     font-size: 14px;
@@ -174,7 +188,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive */
+/* === Responsive Design === */
 @media (max-width: 500px) {
     button {
         width: 100%;

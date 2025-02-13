@@ -11,38 +11,43 @@
 
 <body>
     <div class="container">
+        <!-- Bagian Header -->
         <header>
             <h1 id="title-label">Konversi Suhu (Celcius)</h1>
             <img src="assets/OIP.jpg" alt="Temperature Icon" class="header-icon">
         </header>
 
         <div class="grid-container">
+            <!-- Bagian Input -->
             <section class="input-section">
                 <label id="input-label" for="main-input">Masukkan Suhu (&deg;C)</label>
                 <input type="number" id="main-input" placeholder="Contoh: 70">
             </section>
 
+            <!-- Bagian Tombol -->
             <section class="button-section">
                 <button class="btn-konversi" onclick="autoConvert()">Konversi</button>
                 <button class="btn-reset" onclick="reset()">Reset</button>
                 <button class="btn-reverse" onclick="reverseConversion()">Reverse</button>
             </section>
 
+            <!-- Bagian Hasil Konversi -->
             <div class="result-box">
                 <h3>Hasil Konversi</h3>
                 <p id="main-result"></p>
                 <button id="explanation-btn" style="display: none;" onclick="showExplanation()">Lihat Penjelasan</button>
             </div>
 
+            <!-- Bagian Penjelasan Konversi -->
             <div class="explanation-box">
                 <h3 id="explanation-title">Penjelasan</h3>
                 <p id="explanation-text"></p>
             </div>
 
+            <!-- Bagian Catatan Rumus -->
             <div class="note-box">
                 <h3>Catatan Rumus</h3>
-                <p>Suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat Celsius (°C) kali 9/5 tambah 32.
-                </p>
+                <p>Suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
                 <div class="rumuz">
                     <p><b>S(°F) = (S(°C) x 9/5) + 32</b></p>
                     <p>atau</p>
@@ -51,6 +56,7 @@
             </div>
         </div>
 
+        <!-- Bagian Footer -->
         <footer>
             <p>&copy; 2025 - iarsapna</p>
         </footer>
@@ -58,5 +64,4 @@
 
     <script src="js/script.js"></script>
 </body>
-
 </html>
