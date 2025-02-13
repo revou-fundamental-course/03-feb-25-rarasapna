@@ -4,79 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Konversi Suhu | iarsapna</title>
+    <title>Konversi Suhu Modern | iarsapna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Konversi Suhu</h1>
-    </header>
-    <main>
-        <section>
-            <p>Masukkan Suhu Derajat Celcius (&deg;C) ke kotak dibawah,
-                lalu klik tombol Konversi untuk mengkonversi ke Fahrenheit (&deg;F)</h1>
-            </p>
-        </section>
-        
-        <section>
-            <!-- <form action="">
-                <label for="input-celcius">Celcius: </label>
-                <input type="number" name="celcius" id="input-celcius">
-            </form> -->
+    <div class="container">
+        <header>
+            <h1 id="title-label">Konversi Suhu (Celcius)</h1>
+            <img src="assets/OIP.jpg" alt="Temperature Icon" class="header-icon">
+        </header>
 
-            <div>
-                <label for="main-input">Celcius (&deg;C)</label>
-                <input type="number" id="main-input">
-            </div>
-        </section>
+        <div class="grid-container">
+            <section class="input-section">
+                <label id="input-label" for="main-input">Masukkan Suhu (&deg;C)</label>
+                <input type="number" id="main-input" placeholder="Contoh: 70">
+            </section>
 
-        <section>
-            <div>
-                <button class="btn-konversi" onclick="ctf()">Konversi</button>
+            <section class="button-section">
+                <button class="btn-konversi" onclick="autoConvert()">Konversi</button>
                 <button class="btn-reset" onclick="reset()">Reset</button>
-                <button class="btn-reverse" onclick="ctc()">Reverse</button>
-            </div>
-        </section>
+                <button class="btn-reverse" onclick="reverseConversion()">Reverse</button>
+            </section>
 
-        <section>
-            <div>
-                <label for="main-result">Fahrenheit (&deg;F)</label>
-                <input type="text" id="main-result">
+            <div class="result-box">
+                <h3>Hasil Konversi</h3>
+                <p id="main-result"></p>
+                <button id="explanation-btn" style="display: none;" onclick="showExplanation()">Lihat Penjelasan</button>
             </div>
-        </section>
 
-        <section>
-            <div>
-                <label for="how-result">Cara Konversi</label>
-                <input type="text" id="how-result">
+            <div class="explanation-box">
+                <h3 id="explanation-title">Penjelasan</h3>
+                <p id="explanation-text"></p>
             </div>
-        </section>
 
-        <br>
-        <section>
-            <header>
-                <h2>Cara Konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
-            </header>
-            <hr>
-            <article>
-                <!-- <p>Suhu <span>s</span></p>
-                <p>S <sub>(&deg;F)</sub>=</p> -->
-                <p>Suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
-                <div class="rumus-ctof">
-                    <p><b>S <sub>(&deg;F)</b></sub> = <b>(S<sub>(&deg;C)</sub> x 9/5) + 32</b></p>
+            <div class="note-box">
+                <h3>Catatan Rumus</h3>
+                <p>Suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat Celsius (°C) kali 9/5 tambah 32.
+                </p>
+                <div class="rumuz">
+                    <p><b>S(°F) = (S(°C) x 9/5) + 32</b></p>
+                    <p>atau</p>
+                    <p><b>S(°F) = (S(°C) x 1.8) + 32</b></p>
                 </div>
-                <p class="atau">Atau</p>
-                <div class="rumus-ctof">
-                    <p><b>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 1.8) + 32</b></p>
-                </div>
-               
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 - iarsapna </p>
-    </footer>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 - iarsapna</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
+
 </html>
